@@ -57,3 +57,9 @@ Numerical operations
 Data Visualization
 
 Preprocessing & Machine Learning
+
+Dataset Used:
+
+Heart Disease Risk Dataset (earlymed) with-70,000 patient records and features such as symptoms, risk factors, demographic variables, and target column Hear_Risk.
+
+A simulated demographics dataset (Income, Education, City_Type) was integrated for demonstration.
