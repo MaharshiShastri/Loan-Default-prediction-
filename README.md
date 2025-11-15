@@ -1,48 +1,59 @@
-# Loan-Default-prediction-
-# For this basic implementation, we only need these modules from sklearn.datasets import load_breast_cancer from sklearn.model_selection import train_test_split from sklearn.tree import Decision Tree Classifier from sklearn.ensemble import AdaBoostClassifier
+Title of the Experiment: Collect, Clean, Integrate, and Transform Healthcare Data Based on a Specific Disease.
 
-# from sklearn.metrics import classification_report # Import classification_report # Rem import
+Objectives: To implement the ETL (Extract, Transform, Load) pipeline on a disease-specific healthcare dataset (e.g., diabetes) and perform the following operations:
 
-# Load the well-known Breast Cancer dataset
+Data Collection
 
-#Split into train and test sets
+Data Cleaning
 
-x, y = load_breast_cancer(return_X_y=True)
+Data Integration (optional for multi-source data)
 
-x_train, x_test, y_train, y_test train_test_split(x, y, test_size=0.25,
+Data Transformation
 
-random state-23)
+Theory: In healthcare analytics, raw data is often messy, incomplete, or spread across different sources. Before analysis or machine learning can be applied, this data must go through a pipeline that includes:
 
-#The base learner will be a decision tree with depth = 2
+a. Data Collection
 
-tree - Decision TreeClassifier(max_depth underline - 2 , random_state te = 23 )
+This is the process of gathering data from primary or secondary sources like hospital records, open-source datasets, etc.
 
-#AdaBoost initialization
+b. Data Cleaning
 
-#It's defined the decision tree as the base learner
+It involves detecting and correcting (or removing) corrupt or inaccurate records, dealing with missing values, duplicates, and invalid data types.
 
-#The number of estimators will be 5
+c. Data Integration
 
-#The penalizer for the weights of each estimator is 0.1
+Combining data from multiple sources (e.g., lab results + patient info) into a unified view.
 
-adaboost AdaBoost Classifier(estimator tree, n_estimators = 50 , # Changed n_estimators to 50
+d. Data Transformation
 
-learning_raterandom_state z = 23 ) = 0 ,1,
+Transforming the data into appropriate formats, scaling, encoding, and creating new features suitable for analysis or machine learning models.
 
-#Train!
+Software and Tools Required:
 
-adaboost.fit(x_train, y_train)
+Tool/Library
 
-# Evaluation
+Python
 
-print(f"Train score: {adaboost.score(x_train, y_train)}")
+Google Colab/Jupyter Notebook
 
-print(f"Test score: {adaboost.score(x_test, y_test)}")
+Pandas
 
-#Generate additional evaluation metrics # Removed lines below
+NumPy
 
-#y_pred adaboost.predict(x_test)
+Matplotlib/Seaborn
 
-#print("\nClassification Report:")
+scikit-learn
 
-#print(classification_report(y_test, y_pred))
+Description
+
+Programming Language
+
+Interactive Development
+
+Data manipulation and analysis
+
+Numerical operations
+
+Data Visualization
+
+Preprocessing & Machine Learning
